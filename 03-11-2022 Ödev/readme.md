@@ -1,2 +1,2 @@
-#Progamlama dilleri
-#First Homework 
+# Progamlama dilleri
+# First Homework 
