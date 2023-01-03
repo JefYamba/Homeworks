@@ -17,11 +17,13 @@ int main(void)
     }
     else
     {
+		int i, j , x, y, m, n;  // Variable for loops (to avoide compilation errors - compiler issues)
+		
         int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
 
-        for (int i = 0; i < dim_x; i++)
+        for (i = 0; i < dim_x; i++)
         {
-            for (int j = 0; j < dim_y; j++)
+            for (j = 0; j < dim_y; j++)
             {
                 f[i][j] = rand()%255 + 1;
                 g[i][j] = 0;
@@ -30,9 +32,9 @@ int main(void)
         }
 
         printf("\nMatrix v (Filter) : \n");
-        for (int i = 0; i < 3; i++)
+        for (i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 3; j++)
+            for (j = 0; j < 3; j++)
             {
                 printf("v[%d][%d] : ", i+1, j+1);
                 scanf("%d", &v[i][j]);
@@ -40,14 +42,15 @@ int main(void)
             
         }
 
-        for (int x = 0; x < dim_x ; x++)
+
+       	for (x = 0; x < dim_x ; x++)
         {
-            for (int y = 0; y < dim_y; y++)
+            for (y = 0; y < dim_y; y++)
             {
                 int sum = 0;
-                for (int i = x-1, m = 0; i < x+2 && m < 3; i++, m++)
+                for (i = x-1, m = 0; i < x+2 && m < 3; i++, m++)
                 {
-                    for (int j = y-1, n = 0; j < y+2 && n < 3; j++, n++)
+                    for (j = y-1, n = 0; j < y+2 && n < 3; j++, n++)
                     {
                         int a, b;
                         a = (i >= 0)? i : dim_x - 1 ;
@@ -61,13 +64,12 @@ int main(void)
             
         }
 
-
     /*************************     Prints     ******************************/
 
         printf("\nMatrix f (image matrix): \n");
-        for (int i = 0; i < dim_x; i++)
+        for (i = 0; i < dim_x; i++)
         {
-            for (int j = 0; j < dim_y; j++)
+            for (j = 0; j < dim_y; j++)
             {
                 printf("%5d", f[i][j]);
             }
@@ -76,9 +78,9 @@ int main(void)
         }
 
         printf("\nMatrix v (filter matrix) : \n");
-        for (int i = 0; i < 3; i++)
+        for (i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 3; j++)
+            for (j = 0; j < 3; j++)
             {
                 printf("%5d", v[i][j]);
             }
@@ -87,9 +89,9 @@ int main(void)
         }
 
         printf("\nMatrix g (output matrix): \n");
-        for (int i = 0; i < dim_x; i++)
+        for (i = 0; i < dim_x; i++)
         {
-            for (int j = 0; j < dim_y; j++)
+            for (j = 0; j < dim_y; j++)
             {
                 printf("%5d", g[i][j]);
             }
@@ -101,3 +103,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+
