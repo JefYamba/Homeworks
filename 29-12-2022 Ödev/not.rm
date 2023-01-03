@@ -1,0 +1,21 @@
+These C programs was written in Visual Studio Code. And the output was in CMD.
+DevC++ can have some issues to run them because the loops variables were not created beafor loops.
+instad of using the syntax :
+
+int i;
+for (i = 0; i < count; i++)
+{
+    /* code */
+}
+  
+this was used :
+       
+for (int i = 0; i < count; i++)
+{
+    /* code */
+}
+
+
+
+The second one can displays errors in compilation. 
+It's better to run them on the CMD or terminal to avoide compilation errors.
