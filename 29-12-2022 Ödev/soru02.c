@@ -4,7 +4,8 @@
 
 main()
 {
-    int dim_x,dim_y;
+int dim_x,dim_y;
+
     printf("Enter the dimension values of matrix (rows >= 3 and columns >= 3) : \n");
     printf("   row .. : ");
     scanf("%d", &dim_x);
@@ -13,12 +14,12 @@ main()
     	
     if (dim_x < 3 || dim_y < 3)
     {
-		printf("\n(rows < 3 or columns < 3) \nOperation not processed ...\n");
+        printf("\n(rows < 3 or columns < 3) \nOperation not processed ...\n");
     }
     else
     {
 	int i, j , x, y, m, n;  // Variable for loops (to avoide compilation errors - compiler issues)
-    int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
+	int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
 
         for (i = 0; i < dim_x; i++)
         {
@@ -36,7 +37,8 @@ main()
             {
                 printf("v[%d][%d] : ", i+1, j+1);
                 scanf("%d", &v[i][j]);
-            }  
+            }
+            
         }
 
        	for (x = 0; x < dim_x ; x++)
@@ -96,4 +98,5 @@ main()
     }
 
     getch();
+    
 }
