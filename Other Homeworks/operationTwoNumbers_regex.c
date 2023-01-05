@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <conio.h>
 
-int main(void)
+main()
 {
     char operator;
     float num1, num2, result;
@@ -26,5 +26,5 @@ int main(void)
         printf("Invalid operator ...");
     }
 
-    return EXIT_SUCCESS;
+    getch();
 }
