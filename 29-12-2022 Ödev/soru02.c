@@ -18,8 +18,8 @@ int dim_x,dim_y;
     }
     else
     {
-	int i, j , x, y, m, n;  // Variable for loops (to avoide compilation errors - compiler issues)
-	int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
+		int i, j , x, y, m, n;  // Variable for loops (to avoide compilation errors - compiler issues)
+		int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
 
         for (i = 0; i < dim_x; i++)
         {
