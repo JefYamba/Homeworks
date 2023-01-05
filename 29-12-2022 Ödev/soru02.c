@@ -13,7 +13,7 @@ main()
     	
     if (dim_x < 3 || dim_y < 3)
     {
-        printf("\n(rows < 3 or columns < 3) \nOperation not processed ...\n");
+		printf("\n(rows < 3 or columns < 3) \nOperation not processed ...\n");
     }
     else
     {
