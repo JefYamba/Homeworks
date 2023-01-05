@@ -4,7 +4,6 @@
 
 main()
 {
-
     int dim_x,dim_y;
     printf("Enter the dimension values of matrix (rows >= 3 and columns >= 3) : \n");
     printf("   row .. : ");
@@ -19,7 +18,6 @@ main()
     else
     {
 		int i, j , x, y, m, n; // Variable for loops (to avoide compilation errors - compiler issues)
-		
         int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
 
         for (i = 0; i < dim_x; i++)
@@ -58,11 +56,9 @@ main()
                 }
                 g[x+1][y+1] = sum;
             }
-            
         }
         
         /*
-
        	for (x = 1; x < dim_x-1 ; x++)
         {
             for (y = 1; y < dim_y-1; y++)
@@ -82,7 +78,6 @@ main()
                 g[x][y] = sum;
             } 
         }
-		
 		*/
     /*************************     Prints     ******************************/
 
@@ -118,8 +113,7 @@ main()
             printf("\n");
             printf("\n");
         }
-    }
-    
+    }  
 
     getch();
 }
