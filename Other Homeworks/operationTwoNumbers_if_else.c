@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-int main(void)
+main()
 {
     char operator;
     float num1, num2, result;
