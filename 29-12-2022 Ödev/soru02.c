@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
-int main(void)
+main()
 {
 
     int dim_x,dim_y;
@@ -101,6 +102,5 @@ int main(void)
     }
     
 
-    return EXIT_SUCCESS;
+    getch();
 }
-
