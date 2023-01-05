@@ -17,8 +17,8 @@ main()
     }
     else
     {
-		int i, j , x, y, m, n;  // Variable for loops (to avoide compilation errors - compiler issues)
-        int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
+	int i, j , x, y, m, n;  // Variable for loops (to avoide compilation errors - compiler issues)
+    int f[dim_x][dim_y], v[3][3], g[dim_x][dim_y];
 
         for (i = 0; i < dim_x; i++)
         {
@@ -36,8 +36,7 @@ main()
             {
                 printf("v[%d][%d] : ", i+1, j+1);
                 scanf("%d", &v[i][j]);
-            }
-            
+            }  
         }
 
        	for (x = 0; x < dim_x ; x++)
