@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
-int main(void)
+main()
 {
 
     int dim_x,dim_y;
@@ -42,15 +43,15 @@ int main(void)
             
         }
 
-        /*
-        for (int x = 0; x < dim_x-2 ; x++)
+        
+        for (x = 0; x < dim_x-2 ; x++)
         {
-            for (int y = 0; y < dim_y-2; y++)
+            for (y = 0; y < dim_y-2; y++)
             {
                 int sum = 0;
-                for (int i = x, m = 0; i < x+3 && m < 3; i++, m++)
+                for ( i = x, m = 0; i < x+3 && m < 3; i++, m++)
                 {
-                    for (int j = y, n = 0; j < y+3 && n < 3; j++, n++)
+                    for (j = y, n = 0; j < y+3 && n < 3; j++, n++)
                     {
                         sum += f[i][j] * v[m][n];
                     }
@@ -59,7 +60,8 @@ int main(void)
             }
             
         }
-        */
+        
+        /*
 
        	for (x = 1; x < dim_x-1 ; x++)
         {
@@ -78,10 +80,10 @@ int main(void)
                     }
                 }
                 g[x][y] = sum;
-            }
-            
+            } 
         }
-
+		
+		*/
     /*************************     Prints     ******************************/
 
         printf("\nMatrix f (image matrix): \n");
@@ -119,5 +121,5 @@ int main(void)
     }
     
 
-    return EXIT_SUCCESS;
+    getch();
 }
