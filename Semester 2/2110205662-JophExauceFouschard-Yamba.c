@@ -17,7 +17,11 @@ void listPatients(FILE *file);
 
 int main() {
     FILE *file;
-    int choice;
+    int choice, patientNumber;
+    
+    printf("Enter the number of patients : ");
+    scanf("%d", &patientNumber);
+    printf("\n");
 
     while (1) {
         file = fopen("patients.txt", "a+");
