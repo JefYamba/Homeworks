@@ -1,0 +1,24 @@
+
+IDM Internet Download Manager 6.41 Build 10 Win x64 Multi + Crack
+
+Installation
+Désinstaller l'ancienne vérsion (selecter "tout") et rédémarrer le pc
+Lancer en tant que admin le IDM Fake Serial Cleaner v20.10.13.bat
+pour nettoyer les restes de IDM de la base registre windows 
+
+Installer l'application puis quitter de la zone de notification
+De dossier crack ajoutez au registre de windows le fichier 
+IDM registry.reg (avec double clique sur le fichier ou clique droit et "fusionner")
+Puis copier/coller les executables IDMan.exe et IDMGrHlp.exe dans
+C:\Program Files (x86)\Internet Download Manager
+Remplacer les fichiers existants
+
+Note : 
+Lorsque  vous lancez le IDM :
+1.Vous avez le message qu'il faut vous inscrire et activer
+pour utiliser l'IDM
+ou
+2.Vous avez le message que votre seriel n'est pas valide
+
+Quitter l'application et lancer IDM Fake Serial Cleaner v20.10.13.bat, 
+laissez faire son travail (nettoyer les restes de IDM dans la registre Windows) après il faut récraquer le IDM de nouveau avec les trois fichiers de dossier "crack" 
